@@ -1,0 +1,16 @@
+<div class="wrapper" #wrapper>
+  <div class="header">
+    サンプルブラウザーアニメーションサイト
+  </div>
+  <div class="main" #main>
+    <ul class="main__contents">
+      <li *ngFor="let dummy of dummies" class="content" #contents>
+        <img [attr.src]="dummy.img" alt="">
+        <div class="content__text">
+          <h2>{{ dummy.title }}</h2>
+          <p>{{dummy.text}}</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
